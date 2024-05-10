@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-nav {
+  margin-left: auto; /* This will push the navigation links to the left */
+}
+
+.logo {
+  color: #000;
+  padding: 0rem;
+  position: relative;
+  right: 71vh;
+  scale: 22%;
+}
+
+body{
+    min-height: 100vh;
+    background: url('drop.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#container {
+    color: #ffffff;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border:  2px  rgba(255, 255, 255, .5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+
+  }
+  #container {
+    animation: fade-in 1s;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  #container {
+    transition: opacity 1s; /* add transition effect */
+  }
+  
+  #container.fadeout {
+    opacity: 0;
+  }
+  
+  @media (min-width: 768px) {
+    #container {
+      padding: 30px;
+    }
+  }
+  
+
+
+.container.form-control-signup {
+    width: 800px;
+    height: 800px;
+}
+
+.form-control{
+    width: 100%;
+}
+
+.form-control-signup{
+    position: absolute;
+    justify-content: center;
+}
+
+.container[closing]{
+    display: block;
+    pointer-events: none;
+    inset: 0;
+    animation: fade-out 500ms forwards;
+}
+
+@keyframes fade-out{
+    100%{
+        opacity: 0;
+    }
+    0%{
+        opacity: 1;
+    }
+}
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'ccssforhome/styleforhome.css') }}" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo"><img src="static/ccssforhome/logorig.png" alt="logo"></div>
+      <div class="nav-items">
+        <a href="/">Home</a> <a href="/about">About</a> <a href="/learn">Learn</a> <a id="logout" href="/logout"><ion-icon name="power-outline" class="off"></ion-icon></a>
+      </div>
+    </nav>
+    
+    
+    <section class="hero">
+      <div class="hero-container">
+        <div class="mundo"><img src="static/ccssforhome/logon.png" alt="Earth"></div>
+        <div class="logow"><img src="static/ccssforhome/logorig.png" alt="Earth"></div>
+        <div class="left"><img src="static/ccssforhome/BSU.png" alt="BSU Logo" class="BSU"></div>
+        <div class="right"><img src="static/ccssforhome/cics.png" alt="CICS Logo" class="CICS"></div>
+        <div class="column-left">
+          <h1>"Trash Talk? Let Eco-Track do the Talk ;>"</h1>
+        </div>
+      </div>
+    </section>
+    
+
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  </body>
+</html>
