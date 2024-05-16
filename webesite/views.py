@@ -22,3 +22,8 @@ def learn():
 @login_required
 def details():
     return render_template('details.html', user=current_user)
+
+@views.route('/donate')
+@login_required
+def donate():
+    return render_template('donate.html', user=current_user)
