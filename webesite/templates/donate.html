@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrack</title>
+    <link rel="stylesheet" type="text/css" href="static/cssfordonate/stylefordonate.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="static/ccssforhome/logorig.png" alt="logo"></div>
+        <div class="nav-items">
+          <a href="/">Home</a> <a href="/about">About</a> <a href="/learn">Learn</a>
+        </div>
+      </nav>
+    <div class="container">
+        <h1>Trash Donation</h1>
+        <form method="POST" id="donationForm" action="/donate">
+            <div class="form-group">
+                <label for="trashType">Select Type of Trash:</label>
+                <select id="trashType" name="trashtype">
+                    <option value="plastic">Plastic</option>
+                    <option value="metal">Metal</option>
+                    <option value="paper">Paper</option>
+                    <!-- Add more options if needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="trashVariety">Select Variety:</label>
+                <select id="trashVariety" name="trashvariety">
+                    <option value="bottles">Bottles</option>
+                    <option value="cans">Cans</option>
+                    <option value="jars">Jars</option>
+                    <option value="containers">Containers</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="trashWeight">Weight (kg):</label>
+                <input type="number" id="trashWeight" name="trashweight" step="0.01" min="0.01" placeholder="Enter weight">
+            </div>
+            <button type="button" id="addButton" class="btn1">Add</button>
+        </form>
+        <div class="box">
+            <h2>Donation List</h2>
+            <ul id="donationItems">
+                <!-- List of donated items will be displayed here -->
+            </ul>
+        </div>
+        <div class="box">
+            <h2>Total Price</h2>
+            <input type="hidden" id="totalPriceInput" name="total_price" value="0.00">
+            <p>Total Price: $<span  id="totalPrice">0.00</span></p>
+        </div>
+        <div class="col-md-12 mt-3">
+            <a href="/details" id="learn"class="btn1">Submit Details</a>
+        </div>
+    </div>
+    <script src="static/cssfordonate/scriptfordonate.js"></script>
+</body>
+</html>
